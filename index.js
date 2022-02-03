@@ -255,6 +255,7 @@ let hiscore = localStorage.getItem("hiscore");
 if (hiscore === null) {
     hiscoreval = 0;
     localStorage.setItem("hiscore", JSON.stringify(hiscoreval))
+    console.log(hiscore);
 }
 else {
     hiscoreval = JSON.parse(hiscore);
